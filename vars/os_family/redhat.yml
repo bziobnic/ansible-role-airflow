@@ -14,3 +14,4 @@ _airflow_system_dependencies:
  - name: 'python2-pip'
  - name: 'python2-virtualenv'
  - name: 'python2-setuptools'
+ - name: 'git'

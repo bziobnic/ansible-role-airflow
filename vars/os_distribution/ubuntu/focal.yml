@@ -1,6 +1,13 @@
 ---
 
-# Debian OS family specific vars
+# Ubuntu Focal specific vars
+
+
+# Python
+_airflow_python_version: 'python3.8'
+
+# Services management
+_is_systemd_managed_system: True
 
 _airflow_system_dependencies:
   - name: 'python3-dev'
@@ -11,7 +18,5 @@ _airflow_system_dependencies:
   - name: 'libxml2-dev'
   - name: 'libxslt1-dev'
   - name: 'build-essential'
-  - name: 'python-virtualenv'
-  - name: 'python-pip'
-  - name: 'git'
-
+  - name: 'python3-virtualenv'
+  - name: 'python3-pip'

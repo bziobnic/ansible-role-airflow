@@ -39,6 +39,7 @@
     version: "{{ item.branch_or_release }}"
   with_items:
     - "{{ dags_related_git_repositories }}"
+  when: dags_related_git_repositories is defined
 
 
 # Convert Pipfile to Requirements File

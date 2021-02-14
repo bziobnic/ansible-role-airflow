@@ -238,12 +238,12 @@ airflow_user_config: {}
 airflow_config: "{{ airflow_defaults_config | combine(airflow_user_config, recursive=True) }}"
 
 # Airflow Webserver Users management
-airflow_webserver_admins:
-  - google_username: "google_112545704984098245976"
-    email: "tul08567@temple.edu"
-    firstname: "Christina"
-    lastname: "Harlow"
-    airflow_dummy_password: "dummy-password"
+airflow_webserver_admins: []
+#  - google_username: "google_112545704984098245976"
+#    email: "tul08567@temple.edu"
+#    firstname: "Christina"
+#    lastname: "Harlow"
+#    airflow_dummy_password: "dummy-password"
 
 # Connections management
 airflow_connections:
@@ -272,19 +272,15 @@ airflow_logrotate_config:
 
 # Git setup for cloning DAGs into Airflow DAG folder
 workspace: "{{ airflow_config.core.dags_folder }}"
-dags_git_repositories:
-  - repo: "https://github.com/tulibraries/cob_datapipeline.git"
-    dest_folder: "cob_datapipeline"
-    branch_or_release: "main"
-    pipfile: true
-    pip_requirements: false
-dags_related_git_repositories:
-  - repo: "https://github.com/tulibraries/tul_cob.git"
-    dest_folder: "$HOME/tul_cob"
-    branch_or_release: "main"
+dags_git_repositories: []
+#  - repo: "https://github.com/tulibraries/cob_datapipeline.git"
+#    dest_folder: "cob_datapipeline"
+#    branch_or_release: "main"
+#    pipfile: true
+#    pip_requirements: false
+dags_related_git_repositories: []
+#  - repo: "https://github.com/tulibraries/tul_cob.git"
+#    dest_folder: "$HOME/tul_cob"
+#    branch_or_release: "main"
 
-airflow_dag_system_dependencies:
-  - name: "@Development tools"
-    state: "present"
-  - name: "sqlite-devel"
-    state: "present"
+airflow_dag_system_dependencies: []
