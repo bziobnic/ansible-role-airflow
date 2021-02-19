@@ -1,13 +1,10 @@
-# TU Libraries Ansible Role for Building Airflow
-
-[![Build Status](https://travis-ci.com/tulibraries/ansible-role-airflow.svg?branch=main)](https://travis-ci.com/tulibraries/ansible-role-airflow)
-[![Ansible Role](https://img.shields.io/ansible/role/39366.svg)](https://galaxy.ansible.com/tulibraries/ansible_role_airflow)
+# Ansible Role for Building Airflow
 
 Ansible role to manage Airflow installation and configuration with limited support for DAG retrieval and Operators (worker) environment setup.
 
 ## Breaking changes
 
-To be filled in. This is originally a fork from https://github.com/infOpen/ansible-role-airflow, but separated into own repository given breaking changes setting up Airflow 1.10.x features and DAGs support.
+This is originally a fork from https://github.com/tulibraries/ansible-role-airflow, separated to add support for Fossa and to remove TU-specific Github settings. 
 
 ## Requirements
 

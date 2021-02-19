@@ -1,9 +1,8 @@
 ---
 
 galaxy_info:
-  author: 'Christina Harlow'
-  description: 'Ansible role to install and configure airflow. Forked from infopen.airflow.'
-  company: 'Temple University Libraries'
+  author: 'Scott Zionic'
+  description: 'Ansible role to install and configure airflow. Forked from https://github.com/tulibraries/ansible-role-airflow
   license: 'MIT'
   min_ansible_version: '2.4'
   github_branch: 'main'
